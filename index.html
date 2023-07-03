@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<!-- <meta charset="utf-8">
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
@@ -9,22 +9,26 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="csrf-token" content="Fsr6GNPiZQyL6yLwdANKyyZBVafWJZziwN1ZlqP7">
 	<meta name="description" content="Some description for the page" />
-	<meta property="og:title" content="Crypto Laravel Admin Dashboard" />
-	<meta property="og:description" content="Dashboard Light" />
+	<meta property="og:title" content="Zenix - Crypto Laravel Admin Dashboard" />
+	<meta property="og:description" content="Zenix | Form Pickers" />
 	<meta property="og:image" content="../social-image.png" />
-	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="telephone=no"> -->
 	<title>ড্যাশবোর্ড</title>
 	<!-- Favicon icon -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon.png">
-	<link href="public/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css" />
-	<link href="public/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+		rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.css" rel="stylesheet" type="text/css" />
+	<link href="public/vendor/pickadate/themes/default.date.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
 	<link href="public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
 	<link href="public/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-
 	<!--*******************
         Preloader start
     ********************-->
@@ -141,9 +145,9 @@
 							
 							<li class="nav-item dropdown header-profile">
 								<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-									<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" width="20" alt="" />
+									<img src="public/images/profile/pic1.jpg" width="20" alt="" />
 									<div class="header-info">
-										<span>Mehedi</span>
+										<span>মেহেদী হাসান</span>
 										<small>Super Admin</small>
 									</div>
 								</a>
@@ -186,7 +190,7 @@
 				<div class="sub-header">
 					<div class="d-flex align-items-center flex-wrap me-auto">
 						<h5 class="dashboard_bar">
-							ড্যাশবোর্ড </h5>
+							<!-- সংশোধন আবেদন</h5> -->
 					</div>
 				</div>
 			</div>
@@ -205,61 +209,61 @@
 		<!--**********************************
 	Sidebar start
 ***********************************-->
-		<div class="deznav">
-			<div class="deznav-scroll">
-				<div class="main-profile">
-					<div class="image-bx">
-						<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" alt="">
-					</div>
-					<h5 class="name"><span class="font-w400"></span> মেহেদী হাসান</h5>
-					<p class="email">info@digitalupseba.com</p>
-				</div>
-				<ul class="metismenu" id="menu">
-					<li class="nav-label first">Main Menu</li>
-					<li>
-						<a class="" href="index.html" aria-expanded="false">
-							<i class="uil uil-house-user"></i>
-							ড্যাশবোর্ড
-						</a>
-					</li>
-					<li class="nav-label">সেবা বক্স</li>
-					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-077-menu-1"></i>
-							<span class="nav-text">আবেদন</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="new-application.html">নতুন জন্মসনদ আবেদন</a></li>
-							<li><a href="correction-application .html">সংশোধন আবেদন</a></li>
-						</ul>
-						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="uil uil-book-open"></i>
-							<span class="nav-text">প্রতিবেদন</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="new_application_history.html">নতুন জন্মসনদ </a></li>
-							<li><a href="correction_application_history .html">সংশোধন</a></li>
-						</ul>	
-						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="uil uil-life-ring"></i>
-							<span class="nav-text">সেটিং</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="profile.html">প্রোফাইল </a></li>
-							<li><a href="address.html">গ্রামের তথ্য</a></li>
-						</ul>
-						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="uil uil-wallet"></i>
-							<span class="nav-text">ওয়ালেট</span>
-						</a>
-						<ul aria-expanded="false" >
-							<li><a href="wallet.html">রিচার্জ</a></li>
-							<li><a href="register.html">রেজিষ্টার</a></li>
-						</ul>
-					</li>		
-				
-					
+<div class="deznav">
+	<div class="deznav-scroll">
+		<!-- <div class="main-profile">
+			<div class="image-bx">
+				<img src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" alt="">
 			</div>
-		</div>
+			<h5 class="name"><span class="font-w400"></span> মেহেদী হাসান</h5>
+			<p class="email">info@digitalupseba.com</p>
+		</div> -->
+		<ul class="metismenu" id="menu">
+			<li class="nav-label first">Main Menu</li>
+			<li>
+				<a class="" href="index.html" aria-expanded="false">
+					<i class="uil uil-house-user"></i>
+					ড্যাশবোর্ড
+				</a>
+			</li>
+			<li class="nav-label">সেবা বক্স</li>
+			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+				<i class="flaticon-077-menu-1"></i>
+				<span class="nav-text">আবেদন</span>
+			</a>
+			<ul aria-expanded="false">
+				<li><a href="new-application.html">নতুন জন্মসনদ আবেদন</a></li>
+				<li><a href="correction-application .html">সংশোধন আবেদন</a></li>
+			</ul>
+			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+				<i class="uil uil-book-open"></i>
+				<span class="nav-text">প্রতিবেদন</span>
+			</a>
+			<ul aria-expanded="false">
+				<li><a href="new_application_history.html">নতুন জন্মসনদ </a></li>
+				<li><a href="correction_application_history .html">সংশোধন</a></li>
+			</ul>	
+			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+				<i class="uil uil-life-ring"></i>
+				<span class="nav-text">সেটিং</span>
+			</a>
+			<ul aria-expanded="false">
+				<li><a href="profile.html">প্রোফাইল </a></li>
+				<li><a href="address.html">গ্রামের তথ্য</a></li>
+			</ul>
+			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+				<i class="uil uil-wallet"></i>
+				<span class="nav-text">ওয়ালেট</span>
+			</a>
+			<ul aria-expanded="false" >
+				<li><a href="wallet.html">রিচার্জ</a></li>
+				<li><a href="register.html">রেজিষ্টার</a></li>
+			</ul>
+		</li>	
+		
+			
+	</div>
+</div>
 		<!--**********************************
 	Sidebar end
 ***********************************-->
@@ -274,152 +278,152 @@
         ***********************************-->
 		<div class="content-body">
 			<!-- row -->
-
 			<div class="container-fluid">
-				
+				<!-- <div class="row page-titles">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">ট্যাক্স আদায়</a></li>
+					</ol>
+				</div> -->
+				<!-- row -->
 				<div class="row">
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-primary text-primary">
-										<!-- <i class="ti-user"></i> -->
-										<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30"
-											height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-											stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-											class="feather feather-user">
-											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-											<circle cx="12" cy="7" r="4"></circle>
-										</svg>
-									</span>
-									<div class="media-body">
-										<p class="mb-1">ব্যালেন্স</p>
-										<h4 class="mb-0">3280</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<svg id="icon-orders" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-											stroke-linecap="round" stroke-linejoin="round"
-											class="feather feather-file-text">
-											<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-											<polyline points="14 2 14 8 20 8"></polyline>
-											<line x1="16" y1="13" x2="8" y2="13"></line>
-											<line x1="16" y1="17" x2="8" y2="17"></line>
-											<polyline points="10 9 9 9 8 9"></polyline>
-										</svg>
-									</span>
-									<div class="media-body">
-										<p class="mb-1">নুতুন আবেদন</p>
-										<h4 class="mb-0">2570</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-warning text-warning">
-										<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-											<circle cx="12" cy="7" r="4"></circle>
-										</svg>
-									</span>
-									<div class="media-body">
-										<p class="mb-1">সংশোধন আবেদন</p>
-										<h4 class="mb-0">2570</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-xxl-4 col-lg-6 col-sm-6">
-						<div class="widget-stat card">
-							<div class="card-body p-4">
-								<div class="media ai-icon">
-									<span class="me-3 bgl-success text-success">
-										<svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg" width="24"
-											height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-											stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-											class="feather feather-database">
-											<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-										</svg>
-									</span>
-									<div class="media-body">
-										<p class="mb-1">পেন্ডিং</p>
-										<h4 class="mb-0">364</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
+
 				</div>
+				<div class="tab-pane fade show active" id="deshboard">
+					<!-- deshboard title are  -->
+					<div class="title-bar">
+						<h5>
+							<i class="fa-solid fa-box me-3"></i>
+							<span>ড্যাশবোর্ড</span>
+						</h5>
+					</div>
+	
+					<div class="row justify-content-center mt-4 gap-5 paddingLeft">
+						<!-- deshboard content area -->
+						<div style="background-color: #ddf5ff59;" class="col-lg-7 px-3 py-3 shadow rounded ">
+							<div class="d-flex justify-content-between">
+								<div class="">
+									<h5 style="width: 130px;" class="text-start fs-6 fw-norlam">
+										<span>অভিনন্দন!</span><br>
+										<span style="color: #0a00a4;" class="fw-bolder fs-5">মেহেদী
+											হাসান</span><br>
+										<span>+0</span>
+									</h5>
+								</div>
+								<div class="">
+									<h5 class="text-end fs-5 fw-norlam">
+										<span class="fs-md">আপনার ব্যালেন্স</span><br>
+										<span class="fw-bolder fs-3">০০</span>
+									</h5>
+								</div>
+							</div>
+							<div class="row gap-2 mt-3">
+								<div class="col-lg-12 text-center">
+									<img style="width: 130px ;height:130px; border-radius: 0px 50px 0px 50px; border: 2px dotted;"
+										src="https://dev.digitalupseba.com/storage/app/DATA/SIGNATUREAPIDATAFILES/PHOTOS/5111616404.jpg" alt="">
+								</div>
+								<div class="col-lg-12  mb-3 text-center">
+									<h4 style="font-size: 19px;
+									font-weight: 600;
+									line-height: 22px;">কুতুবপুর ইউনিয়ন পরিষদ</h4>
+									<h6>বেগমগঞ্জ, নোয়াখালী</h6>
+								</div>
+								<hr style="border-bottom: 3px solid; margin-left: 10px;">
+							</div>
+	
+						</div>
+						<!-- deshboard recherge form area -->
+						<div style="background-color: #ddf5ff59;" class="col-lg-4 p-3 shadow rounded">
+							<h3 class="p-2 border-bottom text-center">রিচার্জ করুন</h3>
+							<form class="row g-3 py-3">
+								<!-- <div class="">
+									<label for="staticEmail2" class="">নাম (ইংরেজি)</label>
+									<input placeholder="ইংরেজিতে আপনার নাম লিখুন" type="text" readonly
+										class="form-control w-full d-block" id="staticEmail2"
+										value="MEHEDI HASAN" required>
+								</div>
+								<div class="">
+									<label class="">ইমেইল</label>
+									<input type="email" class="form-control" id="inputPassword2"
+										placeholder="আপনার ইমেইল লিখুন" value="ofmehedi17@gmail.com" required>
+								</div>
+								<div class="col-auto">
+									<label class="">রিচার্জের পরিমান লিখুন</label>
+									<input type="number" class="form-control" id="inputPassword2"
+										placeholder="টাকার পরিমান লিখুন" required>
+								</div> -->
+								<div class="text-center mx-auto">
+									<button type="submit" class="btn btn-primary mb-3">ডিপোজিট </button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--deshboard Apply button area -->
+					<div class="paddingLeft d-flex justify-content-center deshboard-btn mt-5 w-full">
+						<div class="w-50 Tc Tl">
+							<button class="btn btn-info ripple next-btn" type="button" id="brOfficeSelectionNextBtn">নতুন আবেদন</button>
+						</div>
+						<div class="w-50">
+							<button class="btn btn-info ripple next-btn" type="button" id="brOfficeSelectionNextBtn">সংশোধন আবেদন</button>
+						</div>
+						<div class="w-50">
+							<button class="btn btn-info ripple next-btn" type="button" id="brOfficeSelectionNextBtn">পেন্ডিং আবেদন</button>
+						</div>
+						
+					</div>
+				</div>
+
 			</div>
-			<!--**********************************
+		</div>
+	</div>
+	<!--**********************************
             Content body end
         ***********************************-->
 
 
-			<!--**********************************
+	<!--**********************************
             Footer start
         ***********************************-->
 
-			<!--**********************************
+	<!--**********************************
   Footer start
 ***********************************-->
-			<div class="footer">
-<!-- 				<div class="copyright">
-					<p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
-							target="_blank">Digital Up Seba</a> 2021</p>
-				</div> -->
-			</div>
-			<!--**********************************
-  Footer end
-***********************************-->
-			<!--**********************************
-            Footer end
-        ***********************************-->
-
-			<!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-			<!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-
-		</div>
-		<!--**********************************
+<div class="footer">
+<!--     <div class="copyright">
+        <p>Copyright © Digital Up Seba &amp; Developed by <a href="https://digitalupseba.com/"
+                target="_blank">Digital Up Seba</a> 2021</p>
+    </div> -->
+</div>
+	
+	</div>
+	<!--**********************************
         Main wrapper end
     ***********************************-->
 
-		<!--**********************************
+	<!--**********************************
         Scripts
     ***********************************-->
-		<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
-		<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
-		<script src="public/vendor/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
-		<script src="vendor/peity/jquery.peity.min.js" type="text/javascript"></script>
-		<script src="public/vendor/apexchart/apexchart.js" type="text/javascript"></script>
-		<script src="public/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
-		<script src="public/js/dashboard/dashboard-1.js" type="text/javascript"></script>
-		<script src="public/js/custom.js" type="text/javascript"></script>
-		<script src="public/js/deznav-init.js" type="text/javascript"></script>
-		<script src="public/js/demo.js" type="text/javascript"></script>
-		<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
+	<script src="public/vendor/global/global.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+	<script src="public/vendor/moment/moment.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+	<script src="public/vendor/clockpicker/js/bootstrap-clockpicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColor/jquery-asColor.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asGradient/jquery-asGradient.min.js" type="text/javascript"></script>
+	<script src="public/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" type="text/javascript"></script>
+	<script src="public/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"
+		type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.time.js" type="text/javascript"></script>
+	<script src="public/vendor/pickadate/picker.date.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/bs-daterange-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/clock-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/jquery-asColorPicker.init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/material-date-picker-init.js" type="text/javascript"></script>
+	<script src="public/js/plugins-init/pickadate-init.js" type="text/javascript"></script>
+	<script src="public/js/custom.js" type="text/javascript"></script>
+	<script src="public/js/deznav-init.js" type="text/javascript"></script>
+	<script src="public/js/demo.js" type="text/javascript"></script>
+	<script src="public/js/styleSwitcher.js" type="text/javascript"></script>
 </body>
 
 </html>
